@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="ASM1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ASM1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="75,174,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="399" Height="41" PlaceholderText="Email"/>
+        <TextBox x:Name="Title" HorizontalAlignment="Left" Margin="78,257,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="393" Height="40" PlaceholderText="Title"/>
+        <TextBox x:Name="Content" HorizontalAlignment="Left" Margin="80,340,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Height="161" Width="396" PlaceholderText="Content"/>
+        <Button Content="Submit" Margin="363,559,0,0" VerticalAlignment="Top" Width="96" Click="Button_Click"/>
+        <ListView x:Name="LV" Margin="581,48,48,22">
+            <DataTemplate>
+
+
+                <ListViewItem>
+
+
+                    <TextBlock></TextBlock>
+                </ListViewItem>
+            </DataTemplate>
+        </ListView>
+    </Grid>
+</Page>
